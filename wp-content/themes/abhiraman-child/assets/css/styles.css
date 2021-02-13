@@ -1,0 +1,384 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'mariane_lusiamariane_lusia';
+    src: url('../fonts/mariane_lusia-webfont.woff2') format('woff2'),
+         url('../fonts/mariane_lusia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* DM Sans */
+
+@font-face {
+    font-family: 'dm-sans-bold';
+    src: url('../fonts/dmsans-bold.woff2') format('woff2'),
+         url('../fonts/dmsans-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dm-sans-medium';
+    src: url('../fonts/dmsans-medium.woff2') format('woff2'),
+         url('../fonts/dmsans-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dm-sans-regular';
+    src: url('../fonts/dmsans-regular.woff2') format('woff2'),
+         url('../fonts/dmsans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Resets */
+* {box-sizing: border-box;}
+html {font-size:1rem;}
+body, ul,h1,h2,h3,h4,h5,h6,p {margin:0; padding:0; list-style: none;line-height: normal}
+html {overflow-x: hidden; }
+a {text-decoration: none; transition: all 0.25s linear 0s;}
+img {max-width:100%; height:auto;}
+
+
+
+/* Grid Custom: Start*/
+
+
+
+/* Container:Fixed */
+.container {padding-left: 1rem;padding-right: 1rem;position: relative;}
+section .container {position: relative;}
+
+@media only screen and (min-width:1200px) {
+.container {width: 1170px;margin:0 auto;}	
+}
+
+@media only screen and (min-width:1400px) {
+.container {width: 1400px;margin:0 auto;max-width:1400px;padding: 0 50px;}	
+}
+
+@media only screen and (min-width:1600px) {
+.container {width: 1500px;margin:0 auto;max-width:1500px}	
+section .container {}
+}
+
+/* Container:Fluid */
+.container-fluid {padding-left:1rem;padding-right:1rem;}
+@media only screen and (min-width:1200px) {
+.container-fluid {width:100%;padding-left: 3rem;padding-right: 3rem;}	
+}
+
+/* Grid System Starts */
+
+/* XS */
+.gc {display:grid;grid-template-columns:repeat(12,1fr); margin:0 auto;grid-gap:1rem;}
+
+.xs1  {grid-column:auto / span 1; }
+.xs2  {grid-column:auto / span 2; }
+.xs3  {grid-column:auto / span 3; }
+.xs4  {grid-column:auto / span 4; }
+.xs5  {grid-column:auto / span 5; }
+.xs6  {grid-column:auto / span 6; }
+.xs7  {grid-column:auto / span 7; }
+.xs8  {grid-column:auto / span 8; }
+.xs9  {grid-column:auto / span 9; }
+.xs10 {grid-column:auto / span 10;}
+.xs11 {grid-column:auto / span 11;}
+.xs12 {grid-column:auto / span 12;}
+
+
+/* SM */
+@media only screen and (min-width:576px) {
+.sm1  {grid-column:auto / span 1; }
+.sm2  {grid-column:auto / span 2; }
+.sm3  {grid-column:auto / span 3; }
+.sm4  {grid-column:auto / span 4; }
+.sm5  {grid-column:auto / span 5; }
+.sm6  {grid-column:auto / span 6; }
+.sm7  {grid-column:auto / span 7; }
+.sm8  {grid-column:auto / span 8; }
+.sm9  {grid-column:auto / span 9; }
+.sm10 {grid-column:auto / span 10;}
+.sm11 {grid-column:auto / span 11;}
+.sm12 {grid-column:auto / span 12;}
+}
+
+/* MD */
+@media only screen and (min-width:768px) {
+.md1  {grid-column:auto / span 1; }
+.md2  {grid-column:auto / span 2; }
+.md3  {grid-column:auto / span 3; }
+.md4  {grid-column:auto / span 4; }
+.md5  {grid-column:auto / span 5; }
+.md6  {grid-column:auto / span 6; }
+.md7  {grid-column:auto / span 7; }
+.md8  {grid-column:auto / span 8; }
+.md9  {grid-column:auto / span 9; }
+.md10 {grid-column:auto / span 10;}
+.md11 {grid-column:auto / span 11;}
+.md12 {grid-column:auto / span 12;}
+}
+
+/* LG */
+@media only screen and (min-width:992px) {
+.lg1  {grid-column:auto / span 1; }
+.lg2  {grid-column:auto / span 2; }
+.lg3  {grid-column:auto / span 3; }
+.lg4  {grid-column:auto / span 4; }
+.lg5  {grid-column:auto / span 5; }
+.lg6  {grid-column:auto / span 6; }
+.lg7  {grid-column:auto / span 7; }
+.lg8  {grid-column:auto / span 8; }
+.lg9  {grid-column:auto / span 9; }
+.lg10 {grid-column:auto / span 10;}
+.lg11 {grid-column:auto / span 11;}
+.lg12 {grid-column:auto / span 12;}
+}
+
+/* XL */
+@media only screen and (min-width:1200px) {
+.xl1  {grid-column:auto / span 1; }
+.xl2  {grid-column:auto / span 2; }
+.xl3  {grid-column:auto / span 3; }
+.xl4  {grid-column:auto / span 4; }
+.xl5  {grid-column:auto / span 5; }
+.xl6  {grid-column:auto / span 6; }
+.xl7  {grid-column:auto / span 7; }
+.xl8  {grid-column:auto / span 8; }
+.xl9  {grid-column:auto / span 9; }
+.xl10 {grid-column:auto / span 10;}
+.xl11 {grid-column:auto / span 11;}
+.xl12 {grid-column:auto / span 12;}
+}
+
+.no-gap {grid-gap:0;}
+
+/* Grid System Ends */
+
+
+
+
+
+
+body {/* font-family: 'Prata', serif; */overflow-x:hidden;margin: 0;padding: 0;font-family: 'dm-sans-regular';}
+a {text-decoration: none;color:#000;transition:all 0.5s linear 0s;}
+.myemail {display: block; position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);font-size: 20px;font-weight: 600; }
+.myemail:hover {color:#999;}
+.mylinks {position:absolute;bottom: 40px; left: 40px;color:#000;}
+.mylinks a {display:block;font-weight: 600}
+.mylinks a:hover {color:#999;}
+.undefined-object {background-color:#f2b46a; width: 85px; height: 85px; position: absolute; right:20px; bottom:40px; border-radius:100%;text-align: center; }
+.undefined-object .caption {color:#555;font-size:9px; position: absolute;bottom:10px; left: 0; right:0; top:0;  margin:auto; width:100%; line-height: 85px;}
+.copyright {color:#555;font-size: 12px; position: absolute; bottom:10px; width:100%; text-align: center; }
+.topstrip {background-color:#f2b46a;position: absolute;left: 0;top: 0;width: 100%;height: 40%;}
+@media only screen and (min-width:992px) {
+.undefined-object {right:40px;width: 140px;height: 140px;}   
+.undefined-object .caption {line-height: 140px;font-size:12px;}
+ .myemail {font-size: 90px;}   
+ .mylinks a {font-size: 35px;}  
+}
+
+
+img {max-width:100%; height:auto;}
+
+
+/* Wedding */
+
+.main-title-wrapper {margin:0 auto;position:absolute;z-index: 1;text-align: center;left: 0;right: 0;top: 1rem;}
+.main-image-container {
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+.main-image-container > img {object-fit: cover;width: 100%;height: 500px;}
+.main-image-container .couples-names {
+    position:absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    /* font-weight: bold; */
+    font-family:'mariane_lusiamariane_lusia';
+    text-shadow: 0px 10px 15px rgb(0 0 0 / 25%);
+    /* font-family: 'Prata', serif; */
+    /* font-family: philosopher; */
+    }
+
+.main-title {
+    font-size: 1.25em;
+    background: none;
+    display: inline-flex;
+    flex-direction: column;
+    color: #fff;
+    /* font-family: 'Prata', serif; */
+    font-family: 'dm-sans-bold';
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.main-title > span {display:block;}
+.main-title > span:last-child {/* font-size: 1rem; */}
+.main-title > img {height: 3.75rem;/* display: none; */}
+.title-text {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 1rem;
+    color: #fff;
+    top: 1rem;
+}
+.main-title-text {/* background-color: rgba(255,255,255,0.70); */color: #fff;/* padding: .75rem; *//* border: 2px solid gold; *//* border-radius: 50%; *//* font-family: philosopher; */margin-bottom: .35rem;}
+
+
+@media only screen and (min-width:768px) {
+.main-title-wrapper {top: 3rem;}     
+.main-title {font-size: 2.5rem;}    
+.main-image-container > img {height: 1360px;}
+}
+
+
+
+/* Quote */
+
+.quote-wrapper { margin-bottom: 1rem;}
+.quote-wrapper .quote-text {position:relative;text-indent: 1rem;text-align: center;font-size: 1.27rem;padding-left: 1rem;padding-right: 1rem;}
+.quote-wrapper .quote-text:before {
+   content:'';
+   background-image: url('../images/quote-left-icon.svg');
+   position: absolute;
+   left: auto;
+   top: 0;
+   width: 1rem;
+   height: 1rem;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: left top;
+   margin-left: -1rem;
+}
+
+.quote-wrapper .quote-text:after {
+   content:'';
+   background-image: url('../images/quote-right-icon.svg');
+   position: absolute;
+   right: auto;
+   bottom: 0;
+   width: 1rem;
+   height: 1rem;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: left top;
+   margin-left: .35rem;
+}
+.quote-wrapper .quote-author {font-size: .90rem;text-align:center;margin-top:.75rem;}
+
+@media only screen and (min-width:768px) {
+.quote-wrapper {margin-top: 5rem;margin-bottom: 5rem;}    
+.quote-wrapper .quote-text {font-size: 2.35rem;}  
+.quote-wrapper .quote-text:after {top:0;}  
+.quote-wrapper .quote-author {font-size:1.15rem;}
+}
+
+
+
+/* Date and Venue */
+
+.date-and-venue-wrapper {text-align:center;margin-bottom: 1rem;display: flex;justify-content: center;flex-direction: column;gap: 1rem;}
+.date-and-venue-wrapper .splitter {display:none;}
+.date-and-venue-wrapper .date-wrapper {
+    font-size: 1.25rem;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: .5rem;
+    color: #E88C15;
+    /* margin-bottom: 1rem; */
+}
+.date-and-venue-wrapper .date-wrapper .date {
+    font-size: 2.25rem;
+}
+.date-wrapper .day-year {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'dm-sans-medium';
+    width: 7rem;
+}
+
+
+
+.venue-and-muhurtham-wrapper {color: #E88C15;font-family: dm-sans-medium;display: flex;flex-direction: column;justify-content: flex-start;text-align: center;}
+.muhurtham {color: #E88C15;font-family: 'dm-sans-medium';}
+
+
+@media only screen and (min-width: 768px) {
+ .date-and-venue-wrapper .date-wrapper {display:flex;justify-content:center;align-items:center;}   
+.date-and-venue-wrapper .date-wrapper .date {font-size: 3rem;}    
+.date-wrapper .day-year {font-size: 1rem;width: 8rem;}
+.venue-and-muhurtham-wrapper {text-align:left;font-size: 1rem;margin-top: 0.35rem;}
+.date-and-venue-wrapper {flex-direction:row;margin-bottom: 3rem;align-items: flex-start;gap: 3rem;} 
+.date-and-venue-wrapper .splitter {display:block;} 
+}
+
+@media only screen and (min-width: 1200px) {
+.date-wrapper .day-year {font-size: 1.25rem;}    
+.venue-and-muhurtham-wrapper {font-size: 1.25rem;}
+.date-and-venue-wrapper .splitter img {height:4.5rem;}
+}
+
+
+
+/* Live Link and Location */
+
+.live-link-and-location-wrapper {padding: 1.5rem;background-color:#f0f0f0;display: flex;flex-direction: column;gap: 1rem;margin-bottom: 2rem;justify-content: center;}
+.live-link-and-location-wrapper .live-link-container {  display: flex; flex-direction: column;  gap: 1rem;}
+.live-link-container .title {display:flex;column-gap:.5rem; align-items:center;}
+.location-map-container { gap: 1rem; display: flex;flex-direction: column;}
+.location-map-container .title > img {height:1.65rem}
+.live-link-and-location-wrapper .location-map-container .title {display:flex;column-gap:.5rem; align-items:center;}
+
+@media only screen and (min-width:768px) {
+ .live-link-and-location-wrapper {flex-direction:row;gap: 2rem;padding:2rem;margin-bottom: 6rem;}   
+ .location-map-container a > img {height: 350px;overflow:hidden;object-fit: cover;object-position: center center;}
+}
+
+/* Photos */
+
+.photos {display:grid;grid-template-columns:repeat(1,1fr);gap: 1rem;}
+.photos img {object-fit:cover;width:100%;height: 100%;}
+@media only screen and (min-width:768px) {
+.photos {display:grid;grid-template-columns:repeat(2,1fr);gap: 1rem;}    
+}
+
+.wish-wrapper {padding-bottom:2rem;margin-top:3rem;text-align: center;}
+.wish-text {font-size:1.5rem;margin-bottom:.5rem;}
+.wish-couple-names {font-size:1rem;}
+
+@media only screen and (min-width:1200px) {
+.wish-wrapper {margin-top:5rem;margin-bottom: 5rem;}    
+.main-image-container .couples-names {font-size: 11rem;}    
+.main-image-container .couples-names p {line-height: 9rem;}
+}
