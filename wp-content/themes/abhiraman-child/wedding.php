@@ -21,8 +21,7 @@ get_header();
 <div class="main-image-container">
 <img src="<?php echo carbon_get_the_post_meta('main-image');?>" width="100px" height="100px" />
 <div class="couples-names">
-
-<img src="<?php echo carbon_get_the_post_meta('name-image');?>" width="235px" height="100px" />
+<img src="<?php bloginfo('stylesheet_directory')?>/assets/images/shabana-and-abhiraman.svg" alt="main-image" width="235px" height="100px" />
 </div>
 </div>
 
