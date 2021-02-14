@@ -227,7 +227,7 @@ img {max-width:100%; height:auto;}
 .main-image-container .couples-names {
     position:absolute;
     color: #fff;
-    font-size: 6rem;
+    font-size: 4.5rem;
     text-align: left;
     /* font-weight: bold; */
     font-family: cipthayasa;
@@ -238,7 +238,7 @@ img {max-width:100%; height:auto;}
     bottom: 3rem;
     }
 
-.main-image-container .couples-names p {line-height: 5rem;padding: 0;margin: 0;}
+.main-image-container .couples-names p {line-height: 4rem;padding: 0;margin: 0;}
 .main-title {
     font-size: 1.25em;
     background: none;
