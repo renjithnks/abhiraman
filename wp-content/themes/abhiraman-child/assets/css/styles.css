@@ -340,8 +340,8 @@ img {max-width:100%;height:auto;image-rendering: initial;}
     color: #E88C15;
     /* margin-bottom: 1rem; */
 }
-.daycount-wrapper {display:flex;/* flex-direction:column; */justify-content: flex-start;text-align: left;column-gap: .5rem;align-items: center;color: #E88C15;}
-.daycount-wrapper #daystogo {font-size: 2.5rem;line-height: 2.5rem;}
+.daycount-wrapper {display:flex;/* flex-direction:column; */justify-content: flex-start;text-align: left;/* column-gap: .5rem; */align-items: center;color: #E88C15;}
+.daycount-wrapper #daystogo {font-size: 2.5rem;line-height: 2.5rem;margin-right: .5rem;}
 .daycount-wrapper .daycount-text {
     width: 3rem;
 }
@@ -368,7 +368,7 @@ img {max-width:100%;height:auto;image-rendering: initial;}
 
 
 @media only screen and (min-width: 768px) {
-.daycount-wrapper {column-gap:1rem;}
+.daycount-wrapper {/* column-gap:1rem; */}
 .date-wrapper .date-wrapper {display:flex;justify-content:center;align-items:center;}   
 .daycount-wrapper #daystogo {
     font-size: 5rem;
@@ -380,6 +380,7 @@ img {max-width:100%;height:auto;image-rendering: initial;}
 .venue-and-muhurtham-wrapper {font-size: 1.25rem;margin-top: 0.35rem;}
 .date-wrapper {flex-direction:row;margin-bottom: 3rem;/* column-gap: 2rem; */} 
 .date-wrapper .splitter {/* display:block; *//* width: 2px; *//* background: red; */height: 7rem;margin-left: 2rem;margin-right: 2rem;} 
+.daycount-wrapper #daystogo {margin-right:1rem;}
 }
 
 @media only screen and (min-width: 1200px) {

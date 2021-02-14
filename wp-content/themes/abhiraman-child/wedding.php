@@ -17,7 +17,6 @@ get_header();
 <img src="<?php echo carbon_get_the_post_meta('titleimg');?>" width="100px" height="100px" /><!--<img src="<?php bloginfo('stylesheet_directory')?>/assets/images/title-design.svg" alt="main-image">--></div>
 
 
-
 <div class="main-image-container">
 <img src="<?php echo carbon_get_the_post_meta('main-image');?>" width="100px" height="100px" />
 <div class="couples-names">
