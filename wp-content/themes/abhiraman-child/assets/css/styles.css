@@ -205,7 +205,7 @@ a {text-decoration: none;color:#000;transition:all 0.5s linear 0s;}
 }
 
 
-img {max-width:100%; height:auto;}
+img {max-width:100%;height:auto;image-rendering: initial;}
 
 
 /* Wedding */
