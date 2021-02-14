@@ -684,8 +684,9 @@ Container::make( 'post_meta', __( 'Main Image' ) )
 	->where( 'post_template', '=', 'wedding.php' )     // -----> only show in specific templates				
 	->add_fields( array(
 Field::make( 'image', 'main-image', ' ' )->set_value_type( 'url' )->set_width(20),
-Field::make( 'text', 'groom-name', 'Groom-name' )->set_width(40),
-Field::make( 'text', 'bride-name', 'Bride-name' )->set_width(40)
+Field::make( 'image', 'name-image', 'Couple Names' )->set_value_type( 'url' )->set_width(20),
+//Field::make( 'text', 'groom-name', 'Groom-name' )->set_width(40),
+//Field::make( 'text', 'bride-name', 'Bride-name' )->set_width(40)
 ));
 
 
