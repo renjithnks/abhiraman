@@ -402,7 +402,7 @@ img {max-width:100%;height:auto;image-rendering: initial;}
 @media only screen and (min-width:768px) {
 .location-map-container a {height:350px;}    
  .live-link-and-location-wrapper {flex-direction:row;gap: 2rem;padding:2rem;margin-bottom: 6rem;}   
- .location-map-container a > img {height: 350px;overflow:hidden;object-fit: cover;object-position: center center;}
+ .location-map-container a > img {height: 330px;overflow:hidden;object-fit: cover;object-position: center center;}
 }
 
 /* Photos */
