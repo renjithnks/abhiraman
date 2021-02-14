@@ -635,6 +635,25 @@ function my_remove_editor_from_post_type() {
     remove_post_type_support( 'page', 'editor' );
 }
 
+/* Enable SVG Support */
+function my_custom_mime_types( $mimes ) {
+ 
+// New allowed mime types.
+$mimes['svg'] = 'image/svg+xml';
+$mimes['svgz'] = 'image/svg+xml';
+$mimes['doc'] = 'application/msword';
+ 
+// Optional. Remove a mime type.
+unset( $mimes['exe'] );
+ 
+return $mimes;
+}
+add_filter( 'upload_mimes', 'my_custom_mime_types' );
+
+
+/* Enable SVG Support */
+define('ALLOW_UNFILTERED_UPLOADS', true);
+
 
 /* My Custom CSS  */
 function my_stylesheets(){
@@ -654,7 +673,9 @@ Container::make( 'post_meta', __( 'Title' ) )
 	->where( 'post_type', '=', 'page' )   // --------------------------> this helps show fields on 'Pages', not on 'Posts'
 	->where( 'post_template', '=', 'wedding.php' )     // -----> only show in specific templates				
 	->add_fields( array(
-Field::make( 'text', 'wedding-title', ' ' ),
+//Field::make( 'text', 'wedding-title', ' ' ),
+Field::make( 'image', 'titleimg', 'Image' )->set_value_type( 'url' )->set_width(30),
+
 ));
 
 
@@ -680,8 +701,9 @@ Container::make( 'post_meta', __( 'Date' ) )
 	->where( 'post_type', '=', 'page' )   // --------------------------> this helps show fields on 'Pages', not on 'Posts'
 	->where( 'post_template', '=', 'wedding.php' )     // -----> only show in specific templates				
 	->add_fields( array(
-Field::make( 'text', 'date', 'Date' )->set_width(20),
-Field::make( 'text', 'month-year', 'Month and Year' )->set_width(80)
+//Field::make( 'text', 'date', 'Date' )->set_width(20),
+Field::make( 'text', 'month-year', 'Month and Year' )->set_width(70),
+Field::make( 'text', 'daystogotext', 'Days to Go' )->set_width(30)
 ));
 
 Container::make( 'post_meta', __( 'Venue & Muhurtham' ) )
@@ -696,7 +718,9 @@ Container::make( 'post_meta', __( 'Live Link & Location Map' ) )
 	->where( 'post_type', '=', 'page' )   // --------------------------> this helps show fields on 'Pages', not on 'Posts'
 	->where( 'post_template', '=', 'wedding.php' )     // -----> only show in specific templates				
 	->add_fields( array(
+Field::make( 'text', 'livelinktitle', 'Title' )->set_width(100),
 Field::make( 'textarea', 'livelink', 'Live YouTube Link' )->set_width(100),
+Field::make( 'text', 'location-title', 'Title' )->set_width(100),
 Field::make( 'text', 'location-map', 'Location Map' )->set_width(100)
 ));
 
@@ -711,12 +735,12 @@ Field::make( 'image', 'photos', 'Image' )->set_value_type( 'url' )->set_width(30
 )),
 ));
 
-Container::make( 'post_meta', __( 'Wishing' ) )
+Container::make( 'post_meta', __( 'Courtesy' ) )
 	->where( 'post_type', '=', 'page' )   // --------------------------> this helps show fields on 'Pages', not on 'Posts'
 	->where( 'post_template', '=', 'wedding.php' )     // -----> only show in specific templates				
 	->add_fields( array(
-Field::make( 'text', 'wishtext', 'Wishing' )->set_width(100),
-Field::make( 'text', 'couplenames', 'Couples Names' )->set_width(100)
+Field::make( 'text', 'piccourtesy', 'Photo Courtesy' )->set_width(50),
+Field::make( 'text', 'webcourtesy', 'Web Courtesy' )->set_width(50)
 ));
 
 }
