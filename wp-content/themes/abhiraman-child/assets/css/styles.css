@@ -413,9 +413,13 @@ img {max-width:100%; height:auto;}
 @media only screen and (min-width:768px) {
 .photos {/* display: flex; */}
 .photos img {width:48%;}
+.photos img:nth-child(1) {height: 390px;}  
+.photos img:nth-child(2) {height: 390px;}  
 .photos img:nth-child(3) {width: 31.25%;/* height: auto; */}    
 .photos img:nth-child(4) {width: 31.25%;}    
-.photos img:nth-child(5) {width: 31.25%;}    
+.photos img:nth-child(5) {width: 31.25%;} 
+.photos img:nth-child(6) {height: 390px;}  
+.photos img:nth-child(7) {height: 390px;}    
 }
 
 @media only screen and (min-width:1200px) {
