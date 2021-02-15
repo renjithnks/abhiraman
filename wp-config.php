@@ -19,9 +19,6 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-
-define(‘FORCE_SSL_ADMIN’, true);
-
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'abhiraman' );
 
