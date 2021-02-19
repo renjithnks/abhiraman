@@ -76,7 +76,7 @@ foreach ( $photos as $photos ) {
 <div class="courtesy-wrapper">
 <!--<div class="courtesy-text"><?php echo carbon_get_the_post_meta( 'piccourtesy' ); ?></div>-->
 <!--<div class="courtesy-text"><?php echo carbon_get_the_post_meta( 'webcourtesy' ); ?></div>-->
-<p>Pic Courtesy : Vibin & Varsha</p>
+<p>Pic Courtesy : <a href="https://www.instagram.com/vibin_m/?igshid=68cx58hxzf6f" target="_blank">Vibin & Varsha</a></p>
 <p>Powered by: <a href="https://www.igments.com" target="_blank">igments.com@<span id="copyright_year"></span></a></p>
 </div>
 
