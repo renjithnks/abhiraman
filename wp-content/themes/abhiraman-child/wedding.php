@@ -74,15 +74,19 @@ foreach ( $photos as $photos ) {
 
 
 <div class="courtesy-wrapper">
-<div class="courtesy-text"><?php echo carbon_get_the_post_meta( 'piccourtesy' ); ?></div>
-<div class="courtesy-text"><?php echo carbon_get_the_post_meta( 'webcourtesy' ); ?></div>
+<!--<div class="courtesy-text"><?php echo carbon_get_the_post_meta( 'piccourtesy' ); ?></div>-->
+<!--<div class="courtesy-text"><?php echo carbon_get_the_post_meta( 'webcourtesy' ); ?></div>-->
+<p>Pic Courtesy : Vibin & Varsha</p>
+<p>Powered by: <a href="https://www.igments.com" target="_blank">igments.com@<span id="copyright_year"></span></a></p>
 </div>
 
-<p class="powered-by">Powered by: <a href="igments.com">igments.com</a></p>
+
 <?php
 get_footer();
 ?>
-
+<script>
+document.getElementById('copyright_year').innerHTML=(new Date().getFullYear());
+</script>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Feb 28, 2021 00:00:00").getTime();

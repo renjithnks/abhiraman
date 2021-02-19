@@ -438,6 +438,7 @@ img {max-width:100%;height:auto;image-rendering: initial;}
 }
 
 .courtesy-wrapper {padding-bottom:2rem;margin-top:3rem;text-align: center;}
+.courtesy-wrapper p {color:#333;font-size: 1.15rem;line-height: 1.5;}
 .courtesy-text {/* font-size:1.5rem; *//* margin-bottom:.5rem; */}
 .courtesy-couple-names {/* font-size:1rem; */}
 
@@ -448,5 +449,5 @@ img {max-width:100%;height:auto;image-rendering: initial;}
 }
 
 
-.powered-by {margin-bottom:3rem;text-align:center;}
+.powered-by {/* margin-bottom:3rem; */text-align:center;}
 .powered-by a {color: #616263;}
