@@ -78,6 +78,7 @@ foreach ( $photos as $photos ) {
 <div class="courtesy-text"><?php echo carbon_get_the_post_meta( 'webcourtesy' ); ?></div>
 </div>
 
+<p class="powered-by">Powered by: <a href="igments.com">igments.com</a></p>
 <?php
 get_footer();
 ?>

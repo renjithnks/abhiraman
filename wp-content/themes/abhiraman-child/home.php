@@ -21,10 +21,12 @@ get_header();
 <div class="undefined-object">
 <p class="caption">Dear, Deer &amp; Zwan</p>    
 </div>
-<p class="copyright">igments.com@2019</p>
+<p class="copyright">igments.com@<span id="copyright_year"></span></p>
 
 
-
+<script>
+document.getElementById('copyright_year').innerHTML=(new Date().getFullYear());
+</script>
 <?php
 get_footer();
 ?>

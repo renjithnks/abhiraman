@@ -446,3 +446,7 @@ img {max-width:100%;height:auto;image-rendering: initial;}
 .main-image-container .couples-names {font-size: 13rem;left: 5rem;bottom: 5rem;/* text-align: left; */}    
 .main-image-container .couples-names p {line-height: 9rem;}
 }
+
+
+.powered-by {margin-bottom:3rem;text-align:center;}
+.powered-by a {color: #616263;}
