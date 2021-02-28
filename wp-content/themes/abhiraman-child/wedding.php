@@ -32,8 +32,8 @@ get_header();
 <div class="day-year"><?php echo carbon_get_the_post_meta( 'month-year' ); ?></div>
 <div class="splitter"></div>
 <div class="daycount-wrapper">
-<div id="daystogo"></div>
-<div class="daycount-text"><?php echo carbon_get_the_post_meta( 'daystogotext' ); ?></div>
+<div id="daystogo">Its Today</div>
+<div class="daycount-text"><?php // echo carbon_get_the_post_meta( 'daystogotext' ); ?></div>
 </div>
 </div>
 
@@ -107,7 +107,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("daystogo").innerHTML = days;
+//  document.getElementById("daystogo").innerHTML = days;
     
   // If the count down is over, write some text 
   if (distance < 0) {
