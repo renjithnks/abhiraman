@@ -328,8 +328,8 @@ img {max-width:100%;height:auto;image-rendering: initial;}
 
 /* Date and Venue */
 
-.date-wrapper {text-align:center;margin-bottom: 2rem;display: flex;justify-content: center;/* flex-direction: column; *//* gap: 1rem; */align-items: center;}
-.date-wrapper .splitter {/* display:none; */background: #E88C15;width: 2px;height: 3.5rem;margin-left: 1rem;margin-right: 1rem;}
+.date-wrapper {text-align:center;margin-bottom: 2rem;/* display: flex; */justify-content: center;/* flex-direction: column; *//* gap: 1rem; */align-items: center;}
+.date-wrapper .splitter {/* display:none; */background: #E88C15;width: 2px;height: 3.5rem;/* margin-left: 1rem; *//* margin-right: 1rem; */}
 .date-wrapper .date-wrapper {
     font-size: 1.25rem;
     display: flex;
@@ -350,10 +350,10 @@ img {max-width:100%;height:auto;image-rendering: initial;}
     font-size: 2.25rem;
 }
 .date-wrapper .day-year {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: right;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* text-align: center; */
     font-size: 1rem;
     /* font-family: 'dm-sans-medium'; */
     width: 7rem;
@@ -379,12 +379,12 @@ img {max-width:100%;height:auto;image-rendering: initial;}
 .date-wrapper .day-year {font-size: 2rem;width: 15rem;line-height: 1.2;}
 .venue-and-muhurtham-wrapper {font-size: 1.25rem;margin-top: 0.35rem;}
 .date-wrapper {flex-direction:row;margin-bottom: 3rem;/* column-gap: 2rem; */} 
-.date-wrapper .splitter {/* display:block; *//* width: 2px; *//* background: red; */height: 7rem;margin-left: 2rem;margin-right: 2rem;} 
+.date-wrapper .splitter {display: none;/* width: 2px; *//* background: red; */height: 7rem;/* margin-left: 2rem; *//* margin-right: 2rem; */} 
 .daycount-wrapper #daystogo {margin-right:1rem;}
 }
 
 @media only screen and (min-width: 1200px) {
-.date-wrapper .day-year {/* font-size: 1.5rem; */}    
+.date-wrapper .day-year {/* font-size: 1.5rem; *//* flex-direction: row; */width: auto;}    
 .venue-and-muhurtham-wrapper {font-size: 1.5rem;/* font-weight: 400; */line-height: 1.5;margin-bottom: 5rem;}
 .date-wrapper .splitter img {height:4.5rem;}
 }

@@ -9,7 +9,6 @@
  * @subpackage Abhiraman
  * @since Abhiraman 1.0
  */
-
 get_header();
 ?>
 
@@ -32,7 +31,7 @@ get_header();
 <div class="day-year"><?php echo carbon_get_the_post_meta( 'month-year' ); ?></div>
 <div class="splitter"></div>
 <div class="daycount-wrapper">
-<div id="daystogo">Its Today</div>
+<!-- <div id="daystogo">Its Today</div> -->
 <div class="daycount-text"><?php // echo carbon_get_the_post_meta( 'daystogotext' ); ?></div>
 </div>
 </div>
